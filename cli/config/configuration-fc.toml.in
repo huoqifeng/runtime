@@ -136,6 +136,11 @@ block_device_driver = "@DEFBLOCKSTORAGEDRIVER_FC@"
 # command line: intel_iommu=on,iommu=pt
 #enable_iommu = true
 
+# Enable IOMMU_PLATFORM, default false
+# Enabling this will result in the VM device having iommu_platform=on set
+# this option will add iommu_platform=true to the virtio PCI and CCW devices that support it 
+#enable_iommu_platform = true
+
 # Enable swap of vm memory. Default false.
 # The behaviour is undefined if mem_prealloc is also set to true
 #enable_swap = true
